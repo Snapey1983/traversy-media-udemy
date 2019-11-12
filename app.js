@@ -33,22 +33,56 @@ console.timeEnd('Hello'); //time how long code takes to exicute
 
 // var, let, const
 
-var name = 'John Doe';
+// var name = 'John Doe';
+// console.log(name);
+
+// name = "Steve Smith"; // reasign variable or let... not const
+// console.log(name);
+
+// //init var - set to undefined
+// var greeting;
+// console.log(greeting);
+// greeting = 'Hello'; // asign value to undefined var
+// console.log(greeting);
+
+// // variables can include - letters, numbers, _, $
+// // cannot start with a number 
+
+
+// // multi-word vars
+
+// var firstName = 'John'; // Camel Case 
+// var first_name = 'Sara'; // Underscore
+// var FirstName = 'Tom'; // Pascal Case
+
+
+
+// // let
+
+// var name = 'John Doe';
+// console.log(name);
+
+// name = "Steve Smith"; // reasign variable or let... not const
+// console.log(name);
+
+// Const - MUST ASIGN A VALUE IMMEDIATELY
+
+const name = 'John';
 console.log(name);
+// name = 'sara';
+// console.log(name); // will not reasign 
 
-name = "Steve Smith"; // reasign variable or let... not const
-console.log(name);
+const person = {
+    name: 'John',
+    age: 30,
+}
 
-//init var - set to undefined
-var greeting;
-console.log(greeting);
-greeting = 'Hello'; // asign value to undefined var
-console.log(greeting);
+person.name = 'Sara';
 
-// variables can include - letters, numbers, _, $
-// cannot start with a number 
+console.log(person); // can change the data in the data set, but cannot change the const
 
+const numbers = [1,2,3,4,5];
 
+numbers.push(6);
 
-
-
+console.log(numbers);
