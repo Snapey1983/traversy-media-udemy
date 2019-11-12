@@ -86,3 +86,24 @@ const numbers = [1,2,3,4,5];
 numbers.push(6);
 
 console.log(numbers);
+
+
+
+// DATA TYPES 
+
+// Primitive Data Types - Stored directly in the location the varable accesses, Stored on the stack
+// Strings - sequences of charactors (letters, numbers, symbols)
+// Numbers - Numbers (integers, decimals, floats)
+// Boolean - True & False
+// Null - intentional empty value
+// Undefined - all variables are undefined by default
+// Symbols (ES6) - ?
+
+
+// Reference Data Types - Accesses by reference, objects that are stored on the heap, a pointer to a location in memory
+
+// Arrays
+// Object Literals
+// Functions
+// Dates
+// Anything Else
