@@ -286,22 +286,94 @@ comment
 
 // TEMPLATE LITERALS
 
-const name = 'John';
-const age = 30;
-const job = 'Web Developer';
-const city = 'Miami';
+// const name = 'John';
+// const age = 30;
+// const job = 'Web Developer';
+// const city = 'Miami';
 
-// without template strings (ES5)
-html = '<ul><li>Name: ' + name + '</li><li>Age: ' + age + '</li><li>Job: ' + job + '</li><li>City: ' + city + '</li></ul>';
+// // without template strings (ES5)
+// html = '<ul><li>Name: ' + name + '</li><li>Age: ' + age + '</li><li>Job: ' + job + '</li><li>City: ' + city + '</li></ul>';
 
-// with template strings (es6)
+// // with template strings (es6)
 
-html = `
-<ul>
-    <li>Name: $(name)</li>
-    <li>Age: $(age)</li>
-    <li>Job: $(job)</li>
-    <li>City: $(city)</li>
-</ul>`;
+// html = `
+// <ul>
+//     <li>Name: $(name)</li>
+//     <li>Age: $(age)</li>
+//     <li>Job: $(job)</li>
+//     <li>City: $(city)</li>
+// </ul>`;
 
-document.body.innerHTML = html;
+// document.body.innerHTML = html;
+
+// Arrays
+
+const numbers = [43,56,33,23,44,36,5];
+const numbers2 = new Array(22,45,33,76,54);
+const fruit = ['Apple', 'Banana', 'Orange', 'Pear'];
+const mixed = [22, 'hello', true, undefined, null, {a:1, b:1}, new Date()];
+
+let val;
+
+// get array length
+val = numbers.length;
+
+// check if is array
+val = Array.isArray(numbers);
+
+// get single value
+val = numbers[3];
+val = numbers[0]; // arrays are zero based... 0,1,2,3, etc...
+
+// insert into array
+numbers[2] = 100;
+
+//find index of value
+val = numbers.indexOf(36);
+
+// MUTATING ARRAYS
+// // add on to end
+// numbers.push(250);
+
+// // add on to front
+// numbers.unshift(120);
+
+// //take off from end
+// numbers.pop();
+
+// //take off from front
+// numbers.shift();
+
+// // splice values
+// numbers.splice(1,3);
+
+// // reverse
+// numbers.reverse();
+
+// // concatenate array
+// val = numbers.concat(numbers2);
+
+// sorting array
+// val = fruit.sort();
+// val = numbers.sort();
+
+// // use the "compare" function
+// val = numbers.sort(function(x, y){
+//     return x - y;
+// })
+
+// // reverse sort
+// val = numbers.sort(function(x, y){
+//     return y - x;
+// })
+
+// find
+function under50(num){
+    return num < 50;
+}
+
+val = numbers.find(under50);
+
+console.log(numbers);
+console.log(val);
+console.log(fruit);
