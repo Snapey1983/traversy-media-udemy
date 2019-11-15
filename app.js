@@ -542,42 +542,86 @@ const id = 100;
 
 // SWITCHES
 
-const color = 'red';
+// const color = 'red';
 
-switch(color){
-    case 'red':
-        console.log('Color is red');
-        break;
-    case 'blue':
-        console.log('Color is blue');
-        break;
-    default:
-        console.log('color is not red or blue')
-        break;
-}
+// switch(color){
+//     case 'red':
+//         console.log('Color is red');
+//         break;
+//     case 'blue':
+//         console.log('Color is blue');
+//         break;
+//     default:
+//         console.log('color is not red or blue')
+//         break;
+// }
 
-switch(new Date().getDay()){
-    case 0:
-        day = 'Sunday';
-        break;
-    case 1:
-        day = 'Monday';
-        break;
-    case 2:
-        day = 'Tuesday';
-        break;
-    case 3:
-        day = 'Wednesday';
-        break;
-    case 4:
-        day = 'Thursday';
-        break;
-    case 5:
-        day = 'Friday';
-        break;
-    case 6:
-        day = 'Saturday';
-        break;
-}
+// switch(new Date().getDay()){
+//     case 0:
+//         day = 'Sunday';
+//         break;
+//     case 1:
+//         day = 'Monday';
+//         break;
+//     case 2:
+//         day = 'Tuesday';
+//         break;
+//     case 3:
+//         day = 'Wednesday';
+//         break;
+//     case 4:
+//         day = 'Thursday';
+//         break;
+//     case 5:
+//         day = 'Friday';
+//         break;
+//     case 6:
+//         day = 'Saturday';
+//         break;
+// }
 
-console.log(`Today is ${day}`);
+// console.log(`Today is ${day}`);
+
+// FUNCTION DECLARATIONS
+
+// function greet(firstName = 'John', lastName = 'Doe'){
+//     // if(typeof firstName === 'undefined'){firstName = 'John'}
+//     // if(typeof lastName === 'undefined'){lastName = 'Doe'}
+//    //console.log('Hello');
+//    return 'Hello ' + firstName + ' ' + lastName;
+// }
+
+// // console.log(greet('Steve', 'Smith'));
+
+// // FUNCTION EXPRESSIONS
+
+// const square = function(x = 3){
+//     return x*x;
+// };
+
+// // console.log(square());
+
+// // IMMIDIATLEY INVOKABLE FUNCTION EXPRESSION - IIFEs
+
+// // (function(name){
+// //     console.log('Hello ' + name);
+// // })('brad');
+
+// // PROPERTY METHODS
+
+// const todo = {
+//     add: function(){
+//        console.log('Add todo..'); 
+//     },
+//     edit: function(id){
+//         console.log(`Edit todo ${id}`);
+//     }
+// }
+
+// todo.delete = function(){
+//     console.log('Delete todo...');
+// }
+
+// todo.add();
+// todo.edit(22);
+// todo.delete();
