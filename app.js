@@ -1,14 +1,14 @@
-// // single line comment
+// single line comment
 
-// /*
-// multi
-// line 
-// comment
-// */
+ /*
+multi
+line 
+comment
+ */
 
 
 
-// // Log to console
+// Log to console
 // console.log('Hello World');
 // console.log(123);
 // console.log(true);
@@ -31,46 +31,44 @@
 // console.log('Hello World'); //  \ /
 // console.timeEnd('Hello'); //time how long code takes to exicute
 
-// // var, let, const
+// var, let, const
 
-// // var name = 'John Doe';
-// // console.log(name);
+// var name = 'John Doe';
+// console.log(name);
 
-// // name = "Steve Smith"; // reasign variable or let... not const
-// // console.log(name);
+// name = "Steve Smith"; // reasign variable or let... not const
+// console.log(name);
 
-// // //init var - set to undefined
-// // var greeting;
-// // console.log(greeting);
-// // greeting = 'Hello'; // asign value to undefined var
-// // console.log(greeting);
+//init var - set to undefined
+// var greeting;
+// console.log(greeting);
+// greeting = 'Hello'; // asign value to undefined var
+// console.log(greeting);
 
-// // // variables can include - letters, numbers, _, $
-// // // cannot start with a number 
-
-
-// // // multi-word vars
-
-// // var firstName = 'John'; // Camel Case 
-// // var first_name = 'Sara'; // Underscore
-// // var FirstName = 'Tom'; // Pascal Case
+// variables can include - letters, numbers, _, $
+// cannot start with a number 
 
 
+// multi-word vars
 
-// // // let
+// var firstName = 'John'; // Camel Case 
+// var first_name = 'Sara'; // Underscore
+// var FirstName = 'Tom'; // Pascal Case
 
-// // var name = 'John Doe';
-// // console.log(name);
 
-// // name = "Steve Smith"; // reasign variable or let... not const
-// // console.log(name);
+// let
 
-// // Const - MUST ASIGN A VALUE IMMEDIATELY
+// var name = 'John Doe';
+// console.log(name);
 
+// name = "Steve Smith"; // reasign variable or let... not const
+// console.log(name);
+
+// Const - MUST ASIGN A VALUE IMMEDIATELY
 // const name = 'John';
 // console.log(name);
-// // name = 'sara';
-// // console.log(name); // will not reasign 
+// name = 'sara';
+// console.log(name); // will not reasign 
 
 // const person = {
 //     name: 'John',
@@ -94,60 +92,216 @@
 // Primitive Data Types - Stored directly in the location the varable accesses, Stored on the stack
 
 // Strings - sequences of charactors (letters, numbers, symbols)
-const name = 'John doe';
+// const name = 'John doe';
 
-console.log(typeof name)
+// console.log(typeof name)
 
 // Numbers - Numbers (integers, decimals, floats)
-const age = 45;
+// const age = 45;
 
-console.log(typeof age)
+// console.log(typeof age)
 
 // Boolean - True & False
-const hasKids = true;
+// const hasKids = true;
 
-console.log(typeof hasKids)
+// console.log(typeof hasKids)
 
 // Null - intentional empty value
-const car = null;
+// const car = null;
 
-console.log(typeof car)
+// console.log(typeof car)
 
 // Undefined - all variables are undefined by default
-let test;
+// let test;
 
 // console.log(typeof test)
-// // Symbols (ES6) - ?
+// Symbols (ES6) - ?
 // const sym = symbol();
 
-console.log(typeof sym)
-
-
+// console.log(typeof sym)
 // Reference Data Types - Accesses by reference, objects that are stored on the heap, a pointer to a location in memory
 
 // Arrays
-const hobbies = ['movies', 'music']
+// const hobbies = ['movies', 'music']
 
-console.log(typeof hobbies);
+// console.log(typeof hobbies);
 
 // Object Literals
-const address = {
-    city: 'Boston',
-    state: 'MA'
-}
+// const address = {
+//     city: 'Boston',
+//     state: 'MA'
+// }
 
-console.log(typeof address);
+// console.log(typeof address);
 
 // Dates
-const today = new Date();
-console.log(today);
-console.log(typeof today);
-
-
-
-
-
-
+// const today = new Date();
+// console.log(today);
+// console.log(typeof today);
 
 // Functions
 // Anything Else
+
+// TYPE CONVERSION
+
+// let val;
+
+// number to string
+
+// val = 5;
+
+// val = string(5); // 5 as a string rather than a number
+// val = string (4 + 4); // 8 as a string with length = 1
+
+// boolean to string
+// val = string(true);
+
+// date to string
+// val = string(new Date());
+
+// array to string
+// val = ([1,2,3,4]);
+
+// toString() method
+// val = (5).toString();
+// val = (true).toString();
+
+// string to number
+// val = Number('5');
+// val = Number(true);
+// val = Number(false);
+// val = Number(null);
+// val = Number('hello');
+// val = Number([1,2,3]);
+
+// val = parsInt('100.30'); // will parse whole number 
+// val = parsFloat('100.30'), //will parse decimal places
+
+
+
+//output
+// console.log(val);
+// console.log(typeof val);
+// console.log(val.length);
+
+// const val1 = string(5);
+// const val2 = 6;
+// const sum = val1 + val2;
+
+// console.log(sum);
+// console/log(typeof sum);
+
+// SIMPLE MATHS WITH NUMBERS
+// const num1 = 100;
+// const num2 = 50;
+// let val;
+
+// val = num1 + num2;
+// val = num1 - num2;
+// val = num1 * num2;
+// val = num1 / num2;
+// val = num1 % num2; 
+
+// // Math Object
+// val = Math.PI;
+// val = Math.E;
+// val = Math.round(2.4);
+// val = Math.ceil(2.4);
+// val = Math.floor(2.8);
+// val = Math.sqrt(64);
+// val = Math.abs(-3);
+// val = Math.pow(8, 2);
+// val = Math.min(2,33,4,1,55,6,3);
+// val = Math.max(2,33,4,1,55,6,3);
+// val = Math.random(); //decimal random
+
+// val = Math.floor(Math.random() * 20 + 1);
+
+
+// console.log(val);
+
+// STRING METHODS AND CONCATENATION
+
+// const firstName = 'William';
+// const lastName = 'johnston';
+// const age = 36;
+// const str = 'Hello. My name is Dave';
+// const tags = 'web design,web development,html,css';
+// let val;
+
+// val = firstName + lastName;
+
+// // Concatenation
+// val = firstName + ' ' + lastName;
+
+// // Append
+
+// val = 'Brad ';
+// val += 'Traversy';
+
+// val = 'Hello, my name is ' + firstName + ' and I am ' + age;
+
+// // Escaping
+// val = 'That\'s awesome, I can\'t wait';
+
+// // Length
+// val = firstName.length;
+
+// // concat
+// val = firstName.concat(' ', lastName);
+
+// // change case
+// val = firstName.toUpperCase();
+// val = firstName.toLowerCase();
+
+// val = firstName[2];
+
+// // indexOf()
+// val = firstName.indexOf(l);
+// val = firstName.lastIndexOf(i);
+
+// //charAt
+// val = firstName.charAt('2');
+
+// // get last char
+// val = firstName.charAt(firstName.length - 1);
+
+// // substring()
+// val = firstName.substring(0, 4);
+
+// // slice()
+// val = firstName.slice(0,4);
+// val = firstName.slice(-3);
+
+// // split()
+// val = str.split(' ');
+// val = tags.split(',');
+
+// // replace()
+// val = str.replace('dave', 'mairi');
+
+
+// console.log(val);
+
+
+// TEMPLATE LITERALS
+
+const name = 'John';
+const age = 30;
+const job = 'Web Developer';
+const city = 'Miami';
+
+// without template strings (ES5)
+html = '<ul><li>Name: ' + name + '</li><li>Age: ' + age + '</li><li>Job: ' + job + '</li><li>City: ' + city + '</li></ul>';
+
+// with template strings (es6)
+
+html = `
+<ul>
+    <li>Name: $(name)</li>
+    <li>Age: $(age)</li>
+    <li>Job: $(job)</li>
+    <li>City: $(city)</li>
+</ul>`;
+
+document.body.innerHTML = html;
